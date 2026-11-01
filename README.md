@@ -1,4 +1,4 @@
-# Awesome-No-Code-Workflow-Automation
+﻿# Awesome-No-Code-Workflow-Automation
 
 ## Top No-Code Workflow Automation Ecosystem
 
@@ -60,57 +60,21 @@ The global workflow automation and integration platform (iPaaS) market is estima
 
 ## Open-Source GitHub Projects
 
+The following table lists leading open-source workflow automation platforms, self-hosted integration engines, and orchestrators, sorted in descending order by GitHub stargazers:
 
-
-### All-in-One Automation Platforms (Zapier/Make Alternatives)
-
-
-
-- **[n8n](https://github.com/n8n-io/n8n)**  
-
-  The **most established open-source workflow automation platform** (fair-code license). Combines visual building with custom code; **400+ integrations** and 9,000+ workflow templates ; native AI capabilities for building multi-step agents with model flexibility. **Self-hosting provides maximum flexibility and data sovereignty** . **Best for teams wanting a mature, widely-adopted platform** with a large community and template library—but the fair-code license is not OSI-approved and has restrictions on resale.
-
-
-
-- **[Activepieces](https://github.com/activepieces/activepieces)**  
-
-  The **strongest MIT-licensed Zapier alternative** . Features: **500+ integrations** (60% built by the community); **unlimited task execution on paid plans** eliminating usage anxiety; **hybrid approach** supporting both no-code visual building and code customization; self-hostable for data control. Backed by Y Combinator with active development. **Caveats**: fewer integrations than Zapier (500+ vs 7,000+); smaller community and less documentation than n8n; self-hosting requires DevOps expertise . **Best for teams wanting a permissive MIT license** with full commercial use and modification rights—the safest open-source choice if licensing freedom is a priority.
-
-
-
-- **[Windmill](https://github.com/windmill-labs/windmill)**  
-
-  A **developer-first open-source workflow engine and platform** (AGPL-3.0) . Build endpoints, workflows, and UIs in **TypeScript, Python, Go, and Bash**; features a built-in web IDE, **visual flow builder** with branches/loops/approvals/retries, **Workflow-as-Code** (express a workflow as a single script), cron scheduling, webhook triggers, and error handling. **Self-hosting**: Helm charts for Kubernetes or Docker Compose . **Best for development teams** wanting a unified interface for APIs, background jobs, and UIs with multi-language support—but it is more developer-oriented than pure no-code platforms.
-
-
-
-- **[Kestra](https://github.com/kestra-io/kestra)**  
-
-  An **event-driven, declarative orchestration platform** (Apache 2.0) . Defines workflows in YAML; executes tasks in **any language** (SQL, Python, shell, Go, Java, containers); features **500+ plugins**, event-driven triggers, namespace isolation, RBAC, audit logs, and deployment anywhere. Positioned as an alternative to Zapier, Rundeck, Camunda, and Airflow . **Best for platform teams** supporting diverse users who need language-agnostic orchestration with declarative configuration—but YAML verbosity becomes painful for complex branching logic.
-
-
-
-### Code-First Workflow Engines
-
-
-
-- **[Temporal](https://github.com/temporalio/temporal)**  
-
-  Open-source **durable execution platform** (MIT) for reliable, long-running workflows . Workflows are code (Go, Java, TypeScript, Python, .NET) with automatic state persistence, replay, and retry—no visual modeling required. Handles distributed transactions, fan-out/fan-in, and human-in-the-loop approvals with timeouts. **Best for complex, long-running business processes** where code-first orchestration and replayable state matter more than visual building—but it is not a no-code tool and requires developer involvement.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Pipedream** — Developer-focused automation platform with a source-available component registry . Provides triggers and actions for thousands of integrated apps; developers can use components as no-code building blocks or scaffold code for customization. **Best for developers** wanting API orchestration with source-available components—but the core platform is not fully open source.
-
-
-
-**Frameworks for building custom systems**: For a **mature, widely-adopted automation platform**, n8n . For **MIT licensing with unlimited tasks and community integrations**, Activepieces . For **developer-first multi-language workflows with a built-in IDE**, Windmill . For **declarative YAML orchestration with 500+ plugins**, Kestra . For **durable code-first execution**, Temporal . No open-source project matches **Zapier's 7,000+ integration library**—Activepieces (500+), n8n (400+), and Kestra (500+ plugins) lead on data control and cost predictability, but commercial platforms lead on breadth.
-
-
+| Platform | Stars | License | Architecture & Focus | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[n8n](https://github.com/n8n-io/n8n)** | [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) | Fair-code (Sustainable Use) | Visual node-based workflow builder | The **most established open-source workflow automation platform**. Combines visual building with custom JavaScript/Python code; **400+ integrations** and 9,000+ workflow templates; native AI agent workflows with full self-hosting and data sovereignty. |
+| **[Huginn](https://github.com/huginn/huginn)** | [![GitHub stars](https://img.shields.io/github/stars/huginn/huginn?style=social&color=white)](https://github.com/huginn/huginn/stargazers) | MIT | Agent-based event monitoring & scrapers | Hackable event-driven automation platform ("build an open-source Yahoo! Pipes or IFTTT"). Runs online agents that monitor web feeds, parse DOM elements, scrape sites, and execute automated actions on custom events. |
+| **[Kestra](https://github.com/kestra-io/kestra)** | [![GitHub stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers) | Apache 2.0 | Declarative YAML orchestration | An **event-driven, declarative orchestration platform**. Defines workflows in YAML; executes tasks across any runtime (SQL, Python, shell, Go, Java, Docker); features **500+ plugins**, namespace isolation, and real-time execution tracking. |
+| **[Activepieces](https://github.com/activepieces/activepieces)** | [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers) | MIT | Visual Zapier/Make alternative | The **strongest MIT-licensed Zapier alternative**. Features **500+ integrations** (pieces), unlimited task executions on self-hosted instances, and a hybrid visual builder allowing seamless TypeScript extension. |
+| **[Temporal](https://github.com/temporalio/temporal)** | [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers) | MIT | Durable execution workflow engine | Open-source **durable execution platform** for mission-critical, long-running stateful workflows. Workflows are defined in code (Go, Java, TypeScript, Python) with automatic replay, persistence, and distributed state recovery. |
+| **[Node-RED](https://github.com/node-red/node-red)** | [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) | Apache 2.0 | Low-code flow-based programming | Low-code browser-based visual programming tool for wiring together hardware devices, APIs, and online services. Highly extensible ecosystem with thousands of community nodes (palettes). |
+| **[Windmill](https://github.com/windmill-labs/windmill)** | [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers) | AGPL-3.0 | Developer-first workflow & UI engine | Build multi-step workflows, scripts, and internal user interfaces in **TypeScript, Python, Go, and Bash**. Features visual flow composition, Workflow-as-Code, fast execution runtimes, cron scheduling, and webhooks. |
+| **[Trigger.dev](https://github.com/triggerdotdev/trigger.dev)** | [![GitHub stars](https://img.shields.io/github/stars/triggerdotdev/trigger.dev?style=social&color=white)](https://github.com/triggerdotdev/trigger.dev/stargazers) | Apache 2.0 | Developer background jobs & workflows | Modern background jobs and orchestration platform built for TypeScript. Handles long-running jobs, real-time logging, retries, step delays, and serverless execution without timeouts. |
+| **[Automatisch](https://github.com/automatisch/automatisch)** | [![GitHub stars](https://img.shields.io/github/stars/automatisch/automatisch?style=social&color=white)](https://github.com/automatisch/automatisch/stargazers) | AGPL-3.0 | Pure no-code Zapier alternative | Privacy-focused business automation tool allowing teams to connect software services without writing a single line of code. Designed specifically for full GDPR compliance and on-premise execution. |
+| **[Pipedream](https://github.com/pipedreamhq/pipedream)** | [![GitHub stars](https://img.shields.io/github/stars/pipedreamhq/pipedream?style=social&color=white)](https://github.com/pipedreamhq/pipedream/stargazers) | Apache 2.0 (Component registry) | Integration component registry & SDK | Open repository of integration components and actions across thousands of APIs for Pipedream's serverless visual workflow automation platform. |
+| **[Inngest](https://github.com/inngest/inngest)** | [![GitHub stars](https://img.shields.io/github/stars/inngest/inngest?style=social&color=white)](https://github.com/inngest/inngest/stargazers) | Apache 2.0 | Event-driven durable step functions | Developer orchestration engine that turns any codebase into durable event-driven workflows with zero infrastructure setup. Supports step-level retries, scheduling, and concurrency management. |
 
 ## How to Contribute
 
